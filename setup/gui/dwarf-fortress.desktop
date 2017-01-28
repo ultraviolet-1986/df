@@ -1,8 +1,9 @@
 [Desktop Entry]
 Name=Dwarf Fortress
-Exec=dwarf-fortress.df %U
+Exec=dwarf-fortress
 Icon=${SNAP}/meta/gui/icon.png
 Type=Application
+Version=1.1
 StartupNotify=true
 StartupWMClass=Dwarf_Fortress
 Categories=Game;Simulation;

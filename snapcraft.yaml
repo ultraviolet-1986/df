@@ -37,6 +37,6 @@ parts:
     source: overlay
 
 apps:
-  df:
+  dwarf-fortress:
     command: desktop-launch $SNAP/wrapper
     plugs: [opengl, pulseaudio, x11, unity7]
