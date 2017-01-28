@@ -20,15 +20,15 @@ fi
 if [ "$DF_LAST_REVISION" != "$SNAP_REVISION" ]; then
   # Back up saves
   rm -rf "$SNAP_USER_DATA"/.save
-  mv "$SNAP_USER_DATA"/data/save "$SNAP_USER_DATA"/.save || true
+  mv "$SNAP_USER_DATA"/data/save "$SNAP_USER_DATA"/.save 2>/dev/null || true
 
   # Clear out old files that snapd kindly copied for us
-  rm -r "$SNAP_USER_DATA"/data
-  rm "$SNAP_USER_DATA"/*
+  rm -rf "$SNAP_USER_DATA"/data
+  rm -f "$SNAP_USER_DATA"/*
 
   # Copy data files over, DF needs them to be writable
   cp -r data "$SNAP_USER_DATA"
-  mv "$SNAP_USER_DATA"/.save "$SNAP_USER_DATA"/data/save || true
+  mv "$SNAP_USER_DATA"/.save "$SNAP_USER_DATA"/data/save 2>/dev/null || true
 
   # And finally make symlinks to RO space for rest of files
   for target in libs raw; do
