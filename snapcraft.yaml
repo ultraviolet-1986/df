@@ -1,7 +1,7 @@
 # -*- Mode: YAML; indent-tabs-mode: nil; tab-width: 2 -*-
 
 name: dwarf-fortress
-version: 0.43.05
+version: 0.44.09
 summary: Dwarf Fortress world simulator
 description: |
   Dwarf Fortress is a single-player fantasy game by Bay 12 Games. You can control a dwarven outpost or an adventurer in a randomly generated, persistent world.
@@ -16,10 +16,11 @@ grade: stable
 parts:
   tarball:
     plugin: dump
-    source: http://www.bay12games.com/dwarves/df_43_05_linux.tar.bz2
-    prepare: |
+    source: http://www.bay12games.com/dwarves/df_44_09_linux.tar.bz2
+    override-build: |
       chmod a+x df
       find . -type d -exec chmod a+rx {} +
+      snapcraftctl build
     prime:
       - -g_src
       - -libs/libstdc++.so.6
@@ -28,6 +29,7 @@ parts:
   deps:
     plugin: nil
     stage-packages:
+      - freeglut3
       - libglu1-mesa
       - libopenal1
       - libsdl-image1.2
