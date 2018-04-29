@@ -9,14 +9,15 @@ description: |
   This is an unofficial snap, which redistributes the original binaries without modification.
   
   Upstream: http://www.bay12games.com/dwarves/
-  Snap source: https://code.launchpad.net/~mterry/+junk/df
 confinement: strict
 grade: stable
+architectures: [amd64]
 
 parts:
   tarball:
     plugin: dump
     source: http://www.bay12games.com/dwarves/df_44_09_linux.tar.bz2
+    source-checksum: sha512/4b607f67bb58ae355816eba260838a1c914c98761a9222114ff3c6245749c07bba7bcab3abae01dfe4d995b3fc1f3b42e755c2b1476d1bd6007fbb1e58198959
     override-build: |
       chmod a+x df
       find . -type d -exec chmod a+rx {} +
