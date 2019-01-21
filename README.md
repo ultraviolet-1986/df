@@ -5,10 +5,9 @@
 Dwarf Fortress is a single-player fantasy game by Bay 12 Games. You can control
 a dwarven outpost or an adventurer in a randomly generated, persistent world.
 
-This is unofficial snap package, which redistributes the original binaries
-without modification. This snap package is forked from
-<https://github.com/mikix/df>.
+This is an unofficial snap package, which redistributes the original binaries
+without modification.
 
-Upstream: http://www.bay12games.com/dwarves/
-
-Original Authors: Zach and Tarn Adams.
+**Forked from:** <https://github.com/mikix/df>
+**Original Authors:** Zach and Tarn Adams.
+**Upstream:** http://www.bay12games.com/dwarves/
