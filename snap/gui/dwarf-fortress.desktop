@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Dwarf Fortress
-Exec=dwarf-fortress
+Exec=dwarffortress
 Icon=${SNAP}/meta/gui/icon.png
 Type=Application
 Version=1.1
