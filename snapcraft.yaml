@@ -1,12 +1,12 @@
 # -*- Mode: YAML; indent-tabs-mode: nil; tab-width: 2 -*-
 
-name: dwarf-fortress
+name: dwarffortress
 version: 0.44.12
 summary: Dwarf Fortress world simulator
 description: |
   Dwarf Fortress is a single-player fantasy game by Bay 12 Games. You can control a dwarven outpost or an adventurer in a randomly generated, persistent world.
   
-  This is an unofficial snap, which redistributes the original binaries without modification.
+  This is an unofficial snap, which redistributes the original binaries without modification. This version is forked from: https://github.com/mikix/df.
   
   Upstream: http://www.bay12games.com/dwarves/
 confinement: strict
