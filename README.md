@@ -12,4 +12,4 @@ without modification.
 
 **Original Authors:** Zach and Tarn Adams.
 
-**Upstream:** http://www.bay12games.com/dwarves/
+**Upstream:** <http://www.bay12games.com/dwarves/>
