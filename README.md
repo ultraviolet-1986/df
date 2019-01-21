@@ -9,5 +9,7 @@ This is an unofficial snap package, which redistributes the original binaries
 without modification.
 
 **Forked from:** <https://github.com/mikix/df>
+
 **Original Authors:** Zach and Tarn Adams.
+
 **Upstream:** http://www.bay12games.com/dwarves/
