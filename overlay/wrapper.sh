@@ -1,14 +1,31 @@
-#!/bin/sh
-# -*- Mode: sh; indent-tabs-mode: nil; tab-width: 2 -*-
+#!/usr/bin/env bash
+
+#########
+# Notes #
+#########
 
 # DF expects everything in the current directory, both RO and writable data.
+
 # Further, it oddly requires *all* the data files to be writable.
+
 # So we make a per-revision copy of the data files with some strategic symlinks
 # to avoid copying executables and libraries.
+
 # The only files that upstream says can be carried from release to release are
 # savefiles.  Not even init.txt can be carried over.
 
-cd "$SNAP"
+##############
+# Directives #
+##############
+
+# SC1090: Can't follow non-constant source.
+# shellcheck source=/dev/null
+
+#############
+# Kickstart #
+#############
+
+cd "$SNAP" || exit
 
 # Are we a new revision?
 DF_LAST_REVISION=
@@ -38,10 +55,12 @@ if [ "$DF_LAST_REVISION" != "$SNAP_REVISION" ]; then
   echo "DF_LAST_REVISION=$SNAP_REVISION" > "$SNAP_USER_DATA"/.df_revision
 fi
 
-cd "$SNAP_USER_DATA"
+cd "$SNAP_USER_DATA" || exit
 
-# Below this is copied from upstream's df script
+# Work around for bug in Debian/Ubuntu SDL patch.
+export SDL_DISABLE_LOCK_KEYS=1
 
-export SDL_DISABLE_LOCK_KEYS=1 # Work around for bug in Debian/Ubuntu SDL patch.
-#export SDL_VIDEO_CENTERED=1 # Centre the screen.  Messes up resizing.
-./libs/Dwarf_Fortress "$@" # Go, go, go! :)
+# Launch Dwarf Fortress
+./libs/Dwarf_Fortress "$@"
+
+# End of File.

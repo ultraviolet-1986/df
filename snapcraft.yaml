@@ -26,7 +26,7 @@ parts:
       - -g_src
       - -libs/libstdc++.so.6
   desktop-gtk2:
-    after: [] # just so the remote part gets defined
+    after: []
   deps:
     plugin: nil
     stage-packages:
@@ -41,5 +41,5 @@ parts:
 
 apps:
   dwarffortress:
-    command: desktop-launch $SNAP/wrapper
+    command: desktop-launch $SNAP/wrapper.sh
     plugs: [opengl, pulseaudio, x11, unity7]
