@@ -1,4 +1,4 @@
-# Dwarf Fortress
+# Dwarf Fortress Classic
 
 [![Snap Status](https://build.snapcraft.io/badge/ultraviolet-1986/df.svg)](https://build.snapcraft.io/user/ultraviolet-1986/df)
 
@@ -9,6 +9,8 @@ This is an unofficial snap package, which redistributes the original binaries
 without modification.
 
 **Forked from:** <https://github.com/mikix/df>
+
+**Fork URL:** <https://github.com/ultraviolet-1986/df>
 
 **Game Authors:** Zach and Tarn Adams
 
