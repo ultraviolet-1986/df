@@ -3,6 +3,7 @@ Name=Dwarf Fortress Classic
 Exec=dwarffortress
 Icon=${SNAP}/meta/gui/icon.png
 Type=Application
+Terminal=true
 Version=1.1
 StartupNotify=true
 StartupWMClass=Dwarf_Fortress
