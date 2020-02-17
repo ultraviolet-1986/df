@@ -1,7 +1,7 @@
 # -*- Mode: YAML; indent-tabs-mode: nil; tab-width: 2 -*-
 
 name: dwarffortress
-version: 0.47.01
+version: 0.47.03
 summary: Dwarf Fortress world simulator. Forked from 'https://github.com/mikix/df'.
 description: |
   Dwarf Fortress is a single-player fantasy game by Bay 12 Games. You can control a dwarven outpost or an adventurer in a randomly generated, persistent world.
@@ -16,8 +16,8 @@ architectures: [amd64]
 parts:
   tarball:
     plugin: dump
-    source: http://www.bay12games.com/dwarves/df_47_01_linux.tar.bz2
-    source-checksum: sha512/72745e5f22c76592ac04051550714d91609f7428e733c3872fcb2a6d97f4adb9760bd6fafa87051aef0d58a5ba7c5e7f1feee9ed02933e4fd7320dca1bc73e57
+    source: http://www.bay12games.com/dwarves/df_47_03_linux.tar.bz2
+    source-checksum: sha512/a7122fb1f5433200f43344f7f905494184ba916d0316cd0bfde1f2d4f11685ec2e0bad0276b169ca34b4fb0774d62e6d1e03060c2d6ef79140ced62cba1fac95
     override-build: |
       chmod a+x df
       find . -type d -exec chmod a+rx {} +
