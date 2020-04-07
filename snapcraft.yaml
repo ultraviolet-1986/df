@@ -31,6 +31,7 @@ parts:
     plugin: nil
     stage-packages:
       - freeglut3
+      - gtk2-engines-pixbuf
       - libglu1-mesa
       - libopenal1
       - libsdl-image1.2
