@@ -40,35 +40,6 @@ parts:
     plugin: dump
     source: overlay
 
-# parts:
-#   tarball:
-#     plugin: dump
-#     source: http://www.bay12games.com/dwarves/df_47_04_linux.tar.bz2
-#     source-checksum: sha512/65f6cd39187afbb7b60ba72d0caf23c39d95674615ab718ad55c25cad23c08e42c1b911cfde7015b05a280325504f3b931f2c7defb34ee2ee6b725101c536cea
-#     override-build: |
-#       chmod a+x df
-#       find . -type d -exec chmod a+rx {} +
-#       snapcraftctl build
-#     prime:
-#       - -g_src
-#       - -libs/libstdc++.so.6
-#   desktop-gtk2:
-#     after: []
-#   deps:
-#     plugin: nil
-#     stage-packages:
-#       - freeglut3
-#       - gtk2-engines-pixbuf
-#       - libcanberra-gtk-module
-#       - libglu1-mesa
-#       - libopenal1
-#       - libsdl-image1.2
-#       - libsdl-ttf2.0-0
-#       - packagekit-gtk3-module
-#   overlay:
-#     plugin: dump
-#     source: overlay
-
 apps:
   dwarffortress:
     command: desktop-launch $SNAP/wrapper.sh
