@@ -15,7 +15,7 @@ grade: stable
 architectures: [amd64]
 
 parts:
-  dwarffortress:
+  tarball:
     after: [desktop-gtk3]
     plugin: dump
     source: http://www.bay12games.com/dwarves/df_47_04_linux.tar.bz2
@@ -30,9 +30,9 @@ parts:
       - libsdl-ttf2.0-0
       - libslang2
       - packagekit-gtk3-module
-    launcher:
+    overlay:
       plugin: dump
-      source: launcher
+      source: overlay
 
 # parts:
 #   tarball:
