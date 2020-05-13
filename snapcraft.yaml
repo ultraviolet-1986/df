@@ -10,7 +10,6 @@ description: |
 
   Upstream: http://www.bay12games.com/dwarves/
 confinement: strict
-base: core18
 grade: stable
 architectures: [amd64]
 
