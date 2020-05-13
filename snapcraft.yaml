@@ -30,9 +30,10 @@ parts:
       - libsdl-ttf2.0-0
       - libslang2
       - packagekit-gtk3-module
-    overlay:
-      plugin: dump
-      source: overlay
+
+  overlay:
+    plugin: dump
+    source: overlay
 
 # parts:
 #   tarball:
