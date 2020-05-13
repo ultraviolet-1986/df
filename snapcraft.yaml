@@ -15,7 +15,7 @@ architectures: [amd64]
 
 parts:
   tarball:
-    after: [desktop-gtk2]
+    after: [desktop-gtk3]
     plugin: dump
     source: http://www.bay12games.com/dwarves/df_47_04_linux.tar.bz2
     source-checksum: sha512/65f6cd39187afbb7b60ba72d0caf23c39d95674615ab718ad55c25cad23c08e42c1b911cfde7015b05a280325504f3b931f2c7defb34ee2ee6b725101c536cea
