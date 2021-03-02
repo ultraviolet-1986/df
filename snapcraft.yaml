@@ -12,10 +12,10 @@ description: |
 confinement: strict
 grade: stable
 architectures: [amd64]
+base: core20
 
 parts:
   tarball:
-    after: [desktop-gtk3]
     plugin: dump
     source: http://www.bay12games.com/dwarves/df_47_05_linux.tar.bz2
     source-checksum: sha512/9ea46fa12a80266cd09363f1aea8cdd059a5ebeefb453c4a46ffbb1115486409003c3caca95a1b6010da4040d04b781182c59e57a6cc033cd7de4507299f7534
@@ -42,5 +42,6 @@ parts:
 
 apps:
   dwarffortress:
-    command: desktop-launch $SNAP/wrapper.sh
-    plugs: [opengl, pulseaudio, x11, unity7]
+    extensions: [gnome-3-38]
+    command: wrapper.sh
+    plugs: [opengl, audio-playback, x11, unity7]
