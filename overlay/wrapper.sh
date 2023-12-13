@@ -61,6 +61,7 @@ cd "$SNAP_USER_DATA" || exit
 export SDL_DISABLE_LOCK_KEYS=1
 
 # Launch Dwarf Fortress
+pwd
 ./run_df "$@"
 
 # End of File.
