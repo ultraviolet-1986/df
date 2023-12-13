@@ -61,7 +61,6 @@ cd "$SNAP_USER_DATA" || exit
 export SDL_DISABLE_LOCK_KEYS=1
 
 # Launch Dwarf Fortress
-tree
-./data/run_df "$@"
+./libs/Dwarf_Fortress "$@"
 
 # End of File.
