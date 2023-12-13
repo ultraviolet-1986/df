@@ -36,6 +36,7 @@ parts:
       - libsdl-ttf2.0-0
       - libslang2
       - packagekit-gtk3-module
+      - tree
   overlay:
     plugin: dump
     source: overlay
