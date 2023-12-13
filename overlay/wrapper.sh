@@ -62,6 +62,6 @@ export SDL_DISABLE_LOCK_KEYS=1
 
 # Launch Dwarf Fortress
 ls -al ## Check current location context.
-./run_df "$@"
+./data/run_df "$@"
 
 # End of File.
