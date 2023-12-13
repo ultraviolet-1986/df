@@ -20,7 +20,7 @@ parts:
     source: http://www.bay12games.com/dwarves/df_50_11_linux.tar.bz2
     source-checksum: sha512/c2071a8979f68503d5c4330edebd7fa6a5d938346f87f03d25038ff8c419cbfbeceb17c71f428eb0ab1b2e0ea0cd5278f7d0b4894878f4b1d9fa4e126252226c
     override-build: |
-      chmod a+x df
+      chmod a+x run_df
       find . -type d -exec chmod a+rx {} +
       snapcraftctl build
     prime:
