@@ -1,5 +1,7 @@
 # Dwarf Fortress Classic
 
+**WARNING** (10th June 2025): This Snap is no longer maintained and I cannot guarantee that it will continue to work from this point. Apologies for the inconvenience.
+
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/dwarffortress)
 
 [![dwarffortress](https://snapcraft.io//dwarffortress/badge.svg)](https://snapcraft.io/dwarffortress)
